@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  ss-server:
+    image: kuretru/shadowsocks-libev_with_v2ray-plugin:edge
+    container_name: ss-sevrer
+    hostname: ss-server
+    user: nobody
+    restart: unless-stopped
+    volumes:
+      - /home/docker/shadowsocks-libev_with_v2ray-plugin/config:/config
+    network_mode: host
