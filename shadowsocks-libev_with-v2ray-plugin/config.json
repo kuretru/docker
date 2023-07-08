@@ -8,6 +8,5 @@
     "reuse-port":true,
     "mode":"tcp_and_udp",
     "plugin":"v2ray-plugin",
-    "plugin_opts":"server;path=/ss/;host=1.1.1.1",
-    "manager_address": "127.0.0.1:6001"
+    "plugin_opts":"server;path=/ss/;host=1.1.1.1"
 }
