@@ -12,7 +12,8 @@ RUN cd /tmp \
     && rm -rf v2ray-plugin.tar.gz \
     && chmod +x v2ray-plugin_* \
     && mv v2ray-plugin_* /usr/local/bin/v2ray-plugin \
-    && mkdir /var/run/ss-manager
+    && mkdir /var/run/ss-manager \
+    && chown nobody:nobody /var/run/ss-manager
 COPY ./entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 
 ENTRYPOINT ["docker-entrypoint.sh"]
