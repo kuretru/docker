@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  ss-manager:
+    image: gyteng/ssmgr:latest
+    container_name: ss-manager
+    hostname: ss-manager
+    restart: unless-stopped
+    volumes:
+      - /home/docker/ssmgr/config:/root/.ssmgr
+    network_mode: host
