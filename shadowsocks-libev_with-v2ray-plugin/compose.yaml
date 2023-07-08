@@ -2,7 +2,7 @@ version: "3.8"
 services:
   ss-server:
     image: kuretru/shadowsocks-libev_with_v2ray-plugin:edge
-    container_name: ss-sevrer
+    container_name: ss-server
     hostname: ss-server
     user: nobody
     restart: unless-stopped
