@@ -9,7 +9,7 @@ ENV TZ=Asia/Shanghai
 RUN cd /tmp \
     && wget -O v2ray-plugin.tar.gz https://github.com/shadowsocks/v2ray-plugin/releases/download/${V2RAY_PLUGIN_VERSION}/v2ray-plugin-linux-amd64-${V2RAY_PLUGIN_VERSION}.tar.gz \
     && tar -xzvf v2ray-plugin.tar.gz \
-    && rm -rf v2ray-plugin \
+    && rm -rf v2ray-plugin.tar.gz \
     && chmod +x v2ray-plugin_* \
     && mv v2ray-plugin_* /usr/local/bin/v2ray-plugin
 COPY ./entrypoint.sh /usr/local/bin/docker-entrypoint.sh
