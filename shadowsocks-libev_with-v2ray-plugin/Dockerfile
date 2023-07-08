@@ -16,4 +16,4 @@ RUN cd /tmp \
 COPY ./entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 
 ENTRYPOINT ["docker-entrypoint.sh"]
-CMD ["ss-server", "-c", "/config/config.json", "-u", "-D", "/tmp/ss-manager"]
+CMD ["ss-server", "-c", "/config/config.json", "-u"]
