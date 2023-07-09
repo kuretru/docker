@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  mysql:
+    image: mysql:8
+    container_name: mysql
+    hostname: mysql
+    user: nobody:nobody
+    restart: always
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: yes
+    volumes:
+      - data:/var/lib/mysql
+    network_mode: host
+volumes:
+  data:
