@@ -5,7 +5,7 @@ Original shadowsocks-libev and v2ray-plugin bundle
 ## Usage
 
 ```shell
-mkdir -p /home/docker/shadowsocks-libev_with_v2ray-plugin
+mkdir -p /home/docker/shadowsocks-libev_with_v2ray-plugin && cd /home/docker/shadowsocks-libev_with_v2ray-plugin
 wget -O compose.yaml https://github.com/kuretru/docker/raw/main/shadowsocks-libev_with-v2ray-plugin/compose.yaml
 
 mkdir config && cd config/

@@ -5,7 +5,7 @@ shadowsocks-manager
 ## Usage
 
 ```shell
-mkdir -p /home/docker/shadowsocks-manager
+mkdir -p /home/docker/shadowsocks-manager && cd /home/docker/shadowsocks-manager
 wget -O compose.yaml https://github.com/kuretru/docker/raw/main/shadowsocks-manager/compose.yaml
 
 mkdir config && cd config/
