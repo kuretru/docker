@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  redis:
+    image: redis:7
+    container_name: redis
+    hostname: redis
+    user: nobody:nobody
+    restart: always
+    command: redis-server --requirepass 123456
+    environment:
+      TZ: Asia/Shanghai
+    volumes:
+      - data:/data
+    network_mode: host
+volumes:
+  data:
