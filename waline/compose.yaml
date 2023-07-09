@@ -1,0 +1,16 @@
+# docker-compose.yml
+version: '3'
+
+services:
+  waline:
+    image: lizheming/waline:latest
+    container_name: waline
+    hostname: waline
+    user: nobody:nogroup
+    restart: always
+    environment:
+      TZ: 'Asia/Shanghai'
+    env_file: ./environments
+    volumes:
+      - /home/docker/waline/data:/app/data
+    network_mode: host
