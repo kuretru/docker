@@ -5,6 +5,8 @@ services:
     container_name: ss-manager
     hostname: ss-manager
     restart: unless-stopped
+    environment:
+      TZ: Asia/Shanghai
     volumes:
       - /home/docker/ssmgr/config:/root/.ssmgr
     network_mode: host

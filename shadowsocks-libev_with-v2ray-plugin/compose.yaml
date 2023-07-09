@@ -6,6 +6,8 @@ services:
     hostname: ss-server
     user: nobody
     restart: unless-stopped
+    environment:
+      TZ: Asia/Shanghai
     volumes:
       - /home/docker/shadowsocks-libev_with_v2ray-plugin/config:/config
     network_mode: host
