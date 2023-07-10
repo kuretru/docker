@@ -4,7 +4,7 @@ services:
     image: redis:7
     container_name: redis
     hostname: redis
-    user: nobody:nobody
+    user: nobody:nogroup
     restart: always
     command: redis-server --requirepass 123456
     environment:

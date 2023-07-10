@@ -4,7 +4,7 @@ services:
     image: mysql:8
     container_name: mysql
     hostname: mysql
-    user: nobody:nobody
+    user: nobody:nogroup
     restart: always
     environment:
       TZ: Asia/Shanghai
