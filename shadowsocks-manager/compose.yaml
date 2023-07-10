@@ -8,5 +8,5 @@ services:
     environment:
       TZ: Asia/Shanghai
     volumes:
-      - /home/docker/ssmgr/config:/root/.ssmgr
+      - /home/docker/shadowsocks-manager/config:/root/.ssmgr
     network_mode: host
